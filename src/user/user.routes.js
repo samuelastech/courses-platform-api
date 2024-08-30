@@ -9,6 +9,9 @@ const userController = new UserController(userService);
 
 router.get('/:id', userController.findOne.bind(userController));
 router.get('/', userController.findAll.bind(userController));
+router.post('/', userController.create.bind(userController));
+router.delete('/:id', userController.delete.bind(userController));
+router.patch('/:id', userController.update.bind(userController));
 
 exports.usersRoutes = router;
 
