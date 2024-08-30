@@ -1,19 +1,8 @@
-class UserService {
-  #repository;
+const { Service } = require("../common/service");
 
+class UserService extends Service {
   constructor (repository) {
-    this.#repository = repository;
-  }
-
-
-  async getAll() {
-    return this.#repository.findAll();
-  }
-
-  async getOne(id) {
-    const user = await this.#repository.findByPk(+id);
-    if (!user) throw new Error('User not found');
-    return user;
+    super(repository);
   }
 };
 
