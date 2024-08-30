@@ -1,0 +1,32 @@
+{
+  "name": "courses-platform-api",
+  "version": "1.0.0",
+  "description": "A API that supports the creation of courses, students, and teachers",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "node --watch src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelastech/courses-platform-api.git"
+  },
+  "author": "Samuel A. Souza <samuel.araujo.souza@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelastech/courses-platform-api/issues"
+  },
+  "homepage": "https://github.com/samuelastech/courses-platform-api#readme",
+  "dependencies": {
+    "debug": "^4.3.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  }
+}
